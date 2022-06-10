@@ -12,4 +12,5 @@ module "aws-functions" {
 
 policy "enforce-mandatory-tags" {
   source = "./policies/enforce-mandatory-tags.sentinel"
+  enforcement_level = "advisory"
 }
